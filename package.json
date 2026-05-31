@@ -1,0 +1,12 @@
+{
+  "name": "project1-auth-client",
+  "version": "1.0.0",
+  "description": "Static frontend for registration and login",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=5500 --host=127.0.0.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
