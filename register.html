@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>הרשמה</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="auth-card">
+      <h1>הרשמה</h1>
+      <p class="subtitle">צור חשבון חדש</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name">שם מלא</label>
+          <input type="text" id="name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">אימייל</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">סיסמה</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+            autocomplete="new-password"
+          />
+        </div>
+
+        <button type="submit" class="btn-primary">הירשם</button>
+      </form>
+
+      <p id="errorMessage" class="error-message" role="alert"></p>
+
+      <p class="auth-link">כבר יש לך חשבון? <a href="login.html">התחבר</a></p>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
